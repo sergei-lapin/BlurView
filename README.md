@@ -5,7 +5,7 @@
 
 ## What is it?
 
-A RenderScript base BlurView that is capable of blurring the content underneath it
+A RenderScript based BlurView that is capable of blurring the content underneath it
 
 ![](blur-view-example.gif)
 
