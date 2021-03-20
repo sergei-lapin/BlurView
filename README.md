@@ -7,6 +7,8 @@
 
 A RenderScript base BlurView that is capable of blurring the content underneath it
 
+![](blur-view-example.gif)
+
 ## Usage
 
 Just drop it to your layout of choice and you're done.
