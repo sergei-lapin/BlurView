@@ -37,4 +37,4 @@ subprojects {
 
 #### Add library module:
 
-`implementation("com.github.sergei-lapin.BlurView:blurview:{latest-version}")`
+`implementation("com.github.sergei-lapin:BlurView:{latest-version}")`
