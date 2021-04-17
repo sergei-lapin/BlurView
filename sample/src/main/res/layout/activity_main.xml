@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -16,16 +17,39 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher" />
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/blurred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="BLURRED TEXT"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@id/img"
+        app:layout_constraintStart_toStartOf="@id/img"
+        app:layout_constraintTop_toTopOf="@id/blurView"
+        tools:ignore="HardcodedText" />
+
     <com.slapin.blurview.BlurView
         android:id="@+id/blurView"
         android:layout_width="320dp"
-        android:layout_height="320dp"
-        app:bvBlurRadius="12"
+        android:layout_height="480dp"
+        app:bvBlurRadius="4"
         app:bvCornerRadius="20dp"
-        app:bvTint="#646363"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/notBlurred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="NOT BLURRED TEXT"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/blurView"
+        app:layout_constraintEnd_toEndOf="@id/img"
+        app:layout_constraintStart_toStartOf="@id/img"
+        tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
